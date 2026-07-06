@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aditya Sinha — ECE Engineer, Embedded Systems, AI/CV, Railway Infrastructure, Data Analytics. Portfolio." />
+  <meta name="author" content="Aditya Sinha" />
+  <meta property="og:title" content="Aditya Sinha — Engineer / Builder / Analyst" />
+  <meta property="og:description" content="ECE Engineer bridging embedded intelligence, AI systems, railway infrastructure, and data analytics." />
+  <meta property="og:type" content="website" />
+
+  <title>Aditya Sinha — Engineer / Builder / Analyst</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════ BACKGROUND CANVAS -->
+  <canvas id="circuit-canvas" aria-hidden="true"></canvas>
+
+  <!-- ═══════════════════════════════════════════════ NAVIGATION -->
+  <nav role="navigation" aria-label="Main navigation">
+    <div class="nav-logo">AS // Portfolio</div>
+    <div class="nav-links">
+      <a href="#domains">Domains</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certs">Certs</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════ HERO -->
+  <section id="hero" aria-label="Introduction">
+    <div class="hero-eyebrow">ECE Engineer · Builder · Analyst</div>
+
+    <h1 class="hero-name">ADITYA<br />SINHA</h1>
+
+    <div class="hero-title" aria-live="polite">
+      <span id="typewriter"></span><span id="cursor" aria-hidden="true"></span>
+    </div>
+
+    <p class="hero-desc">
+      Engineering student at JIIT Noida bridging embedded intelligence,
+      AI-driven systems, railway infrastructure, and data analytics —
+      turning technical complexity into real-world impact.
+    </p>
+
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="mailto:sinha.adityaa03@gmail.com" class="btn btn-ghost">Get In Touch</a>
+    </div>
+
+    <!-- Live Stats -->
+    <div class="hero-stats" aria-label="Key statistics">
+      <div class="stat">
+        <div class="stat-num" data-target="100" aria-label="100 signaling drawings">0</div>
+        <div class="stat-label">Signaling<br />Drawings</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" data-target="100" data-suffix="Cr+" aria-label="INR 100 Cr+ program">0</div>
+        <div class="stat-label">INR Program<br />Portfolio</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" data-target="5" data-suffix="/5" aria-label="5 out of 5 intern rating">0</div>
+        <div class="stat-label">Intern<br />Rating</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" data-target="4" aria-label="4 live projects">0</div>
+        <div class="stat-label">Live<br />Projects</div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ DOMAINS -->
+  <section id="domains" aria-label="Domain expertise">
+    <div class="sec-header reveal">
+      <div class="sec-tag">// Expertise Matrix</div>
+      <h2 class="sec-title">Domain Coverage</h2>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="domains-grid">
+
+      <div class="domain-card reveal" style="--accent: var(--cyan)">
+        <span class="domain-icon" aria-hidden="true">🔌</span>
+        <span class="domain-num" aria-hidden="true">01</span>
+        <div class="domain-name">Embedded Systems</div>
+        <p class="domain-desc">
+          Hardware-software integration from Arduino sensor networks to IoT automation.
+          Low-level programming meets real-world physical systems.
+        </p>
+        <div class="domain-tags">
+          <span class="tag cyan">Embedded C</span>
+          <span class="tag cyan">Arduino</span>
+          <span class="tag cyan">Sensor Fusion</span>
+          <span class="tag cyan">IoT</span>
+        </div>
+      </div>
+
+      <div class="domain-card reveal" style="--accent: var(--purple)">
+        <span class="domain-icon" aria-hidden="true">🤖</span>
+        <span class="domain-num" aria-hidden="true">02</span>
+        <div class="domain-name">AI &amp; Computer Vision</div>
+        <p class="domain-desc">
+          Real-time object detection and classification pipelines using deep learning.
+          From edge deployment architectures to safety-critical alert systems.
+        </p>
+        <div class="domain-tags">
+          <span class="tag purple">YOLOv5</span>
+          <span class="tag purple">OpenCV</span>
+          <span class="tag purple">Python</span>
+          <span class="tag purple">ML</span>
+        </div>
+      </div>
+
+      <div class="domain-card reveal" style="--accent: var(--amber)">
+        <span class="domain-icon" aria-hidden="true">🚆</span>
+        <span class="domain-num" aria-hidden="true">03</span>
+        <div class="domain-name">Railway Infrastructure</div>
+        <p class="domain-desc">
+          Signaling documentation, SCADA planning, and layout engineering for metro and railway systems.
+          INR 100 Cr+ program delivery exposure at L&amp;T EDRC.
+        </p>
+        <div class="domain-tags">
+          <span class="tag amber">SCADA</span>
+          <span class="tag amber">SIP/CCP/CRP</span>
+          <span class="tag amber">AutoCAD</span>
+          <span class="tag amber">ELP</span>
+        </div>
+      </div>
+
+      <div class="domain-card reveal" style="--accent: var(--green)">
+        <span class="domain-icon" aria-hidden="true">📊</span>
+        <span class="domain-num" aria-hidden="true">04</span>
+        <div class="domain-name">Data Analytics</div>
+        <p class="domain-desc">
+          End-to-end data pipelines, vendor evaluation frameworks, and operational intelligence.
+          Translating raw data into decisions that move programs forward.
+        </p>
+        <div class="domain-tags">
+          <span class="tag green">Python</span>
+          <span class="tag green">SQL</span>
+          <span class="tag green">Power BI</span>
+          <span class="tag green">Excel</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ EXPERIENCE -->
+  <section id="experience" aria-label="Work experience">
+    <div class="sec-header reveal">
+      <div class="sec-tag">// Signal Trace</div>
+      <h2 class="sec-title">Experience</h2>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="timeline" role="list">
+
+      <!-- L&T EDRC -->
+      <div class="timeline-item reveal" role="listitem">
+        <div class="timeline-dot" aria-hidden="true"></div>
+        <div class="timeline-content">
+          <div class="timeline-meta">
+            <span class="timeline-date">MAY 2025 — JULY 2025</span>
+            <span class="timeline-badge">⭐ 5/5 Rating</span>
+          </div>
+          <div class="timeline-role">Intern · Railway Signaling &amp; Telecom</div>
+          <div class="timeline-org">L&amp;T EDRC (Engineering Design and Research Centre) · Faridabad, India</div>
+          <ul class="timeline-bullets">
+            <li>Contributed to <span class="highlight">100+ signaling layout drawings</span> and 10+ core planning documents (SIP, CCP, CRP) for Indian Railways.</li>
+            <li>Enhanced Jakarta MRT Phase 2 delivery by preparing Electrical Layout Plans with <span class="highlight">98% documentation accuracy</span>.</li>
+            <li>Conducted technical vendor comparison (Panasonic vs KTK) influencing procurement for an <span class="highlight">INR 100 Cr+ Dubai transit project</span>.</li>
+            <li>Assisted in SCADA system architecture planning across multiple metro corridors.</li>
+            <li>Received <span class="highlight">top performer rating (5/5)</span> for technical competence and execution discipline.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CICE Leadership -->
+      <div class="timeline-item reveal" role="listitem">
+        <div class="timeline-dot timeline-dot--purple" aria-hidden="true"></div>
+        <div class="timeline-content">
+          <div class="timeline-meta">
+            <span class="timeline-date">2024 — PRESENT</span>
+            <span class="timeline-badge timeline-badge--purple">Leadership</span>
+          </div>
+          <div class="timeline-role">Digital &amp; Design Head · CICE</div>
+          <div class="timeline-org">Student Organization · JIIT Noida</div>
+          <ul class="timeline-bullets">
+            <li>Leading a <span class="highlight">20+ member team</span> across design, content, and coordination.</li>
+            <li>Defined sprint workflows, task ownership structures, and delivery timelines for all initiatives.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="timeline-item reveal" role="listitem">
+        <div class="timeline-dot timeline-dot--amber" aria-hidden="true"></div>
+        <div class="timeline-content">
+          <div class="timeline-meta">
+            <span class="timeline-date">2023 — PRESENT</span>
+            <span class="timeline-badge timeline-badge--amber">Academic</span>
+          </div>
+          <div class="timeline-role">Integrated M.Tech Student · ECE</div>
+          <div class="timeline-org">Jaypee Institute of Information Technology · Noida · Expected May 2027</div>
+          <ul class="timeline-bullets">
+            <li>Specializing in Electronics and Communication Engineering with focus on embedded systems, VLSI, and IoT.</li>
+            <li>Core coursework: IoT, VLSI Fabrication, Low-Power CMOS, EV Systems, Nanoscience and Technology.</li>
+            <li>Class XII — PCM, Vanasthali Public School, Ghaziabad — <span class="highlight">90.2%</span></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ PROJECTS -->
+  <section id="projects" aria-label="Projects">
+    <div class="sec-header reveal">
+      <div class="sec-tag">// Build Log</div>
+      <h2 class="sec-title">Projects</h2>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- OvercrowdX -->
+      <article class="project-card reveal" style="--acc: rgba(0,245,255,.15); --acc-color: var(--cyan)">
+        <div class="project-accent"></div>
+        <div class="project-label">// Major Project · AI + CV</div>
+        <h3 class="project-name">OvercrowdX</h3>
+        <p class="project-desc">
+          Real-time crowd density monitoring and stampede risk detection. YOLOv5-powered people counting
+          with adaptive density thresholds and automated alert triggers — designed for smart city deployments.
+        </p>
+        <div class="project-metric">
+          <div class="metric">
+            <div class="metric-val">90%+</div>
+            <div class="metric-key">Detection Accuracy</div>
+          </div>
+          <div class="metric">
+            <div class="metric-val">RT</div>
+            <div class="metric-key">Real-time</div>
+          </div>
+          <div class="metric">
+            <div class="metric-val">Edge</div>
+            <div class="metric-key">Deployable</div>
+          </div>
+        </div>
+        <div class="project-stack">
+          <span class="stack-chip">YOLOv5</span>
+          <span class="stack-chip">OpenCV</span>
+          <span class="stack-chip">Python</span>
+          <span class="stack-chip">Edge Hardware</span>
+        </div>
+      </article>
+
+      <!-- IoT Smart Home -->
+      <article class="project-card reveal" style="--acc: rgba(0,255,136,.15); --acc-color: var(--green)">
+        <div class="project-accent" style="background: radial-gradient(circle at top right, rgba(0,255,136,.15), transparent 70%)"></div>
+        <div class="project-label">// JIIT TechFest · 1st Place / 30+ Teams</div>
+        <h3 class="project-name">IoT Smart Home<br />Automation</h3>
+        <p class="project-desc">
+          NodeMCU-based intelligent home automation system with real-time sensor feedback,
+          remote control, and multi-device coordination. Secured first place at JIIT TechFest.
+        </p>
+        <div class="project-metric">
+          <div class="metric">
+            <div class="metric-val" style="color: var(--green)">#1</div>
+            <div class="metric-key">TechFest Rank</div>
+          </div>
+          <div class="metric">
+            <div class="metric-val" style="color: var(--green)">30+</div>
+            <div class="metric-key">Teams Beaten</div>
+          </div>
+        </div>
+        <div class="project-stack">
+          <span class="stack-chip">NodeMCU</span>
+          <span class="stack-chip">IoT</span>
+          <span class="stack-chip">Embedded C</span>
+          <span class="stack-chip">Sensor Network</span>
+        </div>
+      </article>
+
+      <!-- RefriGenius -->
+      <article class="project-card reveal" style="--acc: rgba(123,47,190,.15); --acc-color: #BB88FF">
+        <div class="project-accent" style="background: radial-gradient(circle at top right, rgba(123,47,190,.2), transparent 70%)"></div>
+        <div class="project-label">// Minor Project 2 · Embedded</div>
+        <h3 class="project-name">RefriGenius</h3>
+        <p class="project-desc">
+          Intelligent refrigeration monitoring system using Arduino Uno and multi-sensor fusion.
+          Real-time inventory tracking with energy-efficient alert logic — ~30% reduction in simulated energy overhead.
+        </p>
+        <div class="project-metric">
+          <div class="metric">
+            <div class="metric-val" style="color: #BB88FF">~30%</div>
+            <div class="metric-key">Energy Savings</div>
+          </div>
+          <div class="metric">
+            <div class="metric-val" style="color: #BB88FF">RT</div>
+            <div class="metric-key">Monitoring</div>
+          </div>
+        </div>
+        <div class="project-stack">
+          <span class="stack-chip">Arduino Uno</span>
+          <span class="stack-chip">Sensor Fusion</span>
+          <span class="stack-chip">Embedded C</span>
+        </div>
+      </article>
+
+      <!-- Gesture AV -->
+      <article class="project-card reveal" style="--acc: rgba(255,107,0,.15); --acc-color: var(--amber)">
+        <div class="project-accent" style="background: radial-gradient(circle at top right, rgba(255,107,0,.15), transparent 70%)"></div>
+        <div class="project-label">// Minor Project 1 · HCI</div>
+        <h3 class="project-name">Gesture-Controlled<br />Autonomous Vehicle</h3>
+        <p class="project-desc">
+          Flex-sensor glove for wireless control of an autonomous vehicle. Hardware-software integration
+          for novel assistive technology — translating physical gestures into precise vehicle commands.
+        </p>
+        <div class="project-metric">
+          <div class="metric">
+            <div class="metric-val" style="color: var(--amber)">Flex</div>
+            <div class="metric-key">Sensor Array</div>
+          </div>
+          <div class="metric">
+            <div class="metric-val" style="color: var(--amber)">RF</div>
+            <div class="metric-key">Wireless</div>
+          </div>
+        </div>
+        <div class="project-stack">
+          <span class="stack-chip">Flex Sensors</span>
+          <span class="stack-chip">Wireless RF</span>
+          <span class="stack-chip">Embedded C</span>
+          <span class="stack-chip">Assistive Tech</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ SKILLS -->
+  <section id="skills" aria-label="Skills">
+    <div class="sec-header reveal">
+      <div class="sec-tag">// Tech Stack</div>
+      <h2 class="sec-title">Skills</h2>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="skills-layout">
+
+      <!-- Radar Chart -->
+      <div class="reveal">
+        <canvas id="radar" width="420" height="420" aria-label="Skill radar chart across 6 domains"></canvas>
+      </div>
+
+      <!-- Skill Bars -->
+      <div class="skills-list reveal">
+
+        <div class="skill-category">
+          <div class="skill-cat-name">Programming</div>
+          <div class="skill-row"><span class="skill-name">Python</span>       <div class="skill-bar-bg"><div class="skill-bar-fill" data-w="88"></div></div><span class="skill-pct">88%</span></div>
+          <div class="skill-row"><span class="skill-name">C / C++</span>      <div class="skill-bar-bg"><div class="skill-bar-fill" data-w="80"></div></div><span class="skill-pct">80%</span></div>
+          <div class="skill-row"><span class="skill-name">SQL</span>           <div class="skill-bar-bg"><div class="skill-bar-fill" data-w="75"></div></div><span class="skill-pct">75%</span></div>
+          <div class="skill-row"><span class="skill-name">Embedded C</span>   <div class="skill-bar-bg"><div class="skill-bar-fill" data-w="82"></div></div><span class="skill-pct">82%</span></div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-name">AI &amp; Vision</div>
+          <div class="skill-row"><span class="skill-name">YOLO / OpenCV</span><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="78"></div></div><span class="skill-pct">78%</span></div>
+          <div class="skill-row"><span class="skill-name">ML / Analytics</span><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="74"></div></div><span class="skill-pct">74%</span></div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-name">Hardware &amp; Systems</div>
+          <div class="skill-row"><span class="skill-name">Arduino / IoT</span> <div class="skill-bar-bg"><div class="skill-bar-fill" data-w="85"></div></div><span class="skill-pct">85%</span></div>
+          <div class="skill-row"><span class="skill-name">SCADA / Railway</span><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="70"></div></div><span class="skill-pct">70%</span></div>
+          <div class="skill-row"><span class="skill-name">AutoCAD</span>        <div class="skill-bar-bg"><div class="skill-bar-fill" data-w="65"></div></div><span class="skill-pct">65%</span></div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-name">Analytics Tools</div>
+          <div class="skill-row"><span class="skill-name">Power BI</span>       <div class="skill-bar-bg"><div class="skill-bar-fill" data-w="72"></div></div><span class="skill-pct">72%</span></div>
+          <div class="skill-row"><span class="skill-name">Excel (Advanced)</span><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="80"></div></div><span class="skill-pct">80%</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ CERTIFICATIONS -->
+  <section id="certs" aria-label="Certifications">
+    <div class="sec-header reveal">
+      <div class="sec-tag">// Verified Credentials</div>
+      <h2 class="sec-title">Certifications</h2>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="certs-grid">
+
+      <a href="https://www.cert.devtown.in/verify/1NAA8B" target="_blank" rel="noopener noreferrer" class="cert-card reveal">
+        <span class="cert-icon" aria-hidden="true">🏆</span>
+        <div class="cert-body">
+          <div class="cert-name">Microsoft Technology Associate</div>
+          <div class="cert-issuer">Microsoft · Verified</div>
+        </div>
+        <span class="cert-arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <a href="https://www.cert.devtown.in/verify/1NAA8B" target="_blank" rel="noopener noreferrer" class="cert-card reveal">
+        <span class="cert-icon" aria-hidden="true">🧠</span>
+        <div class="cert-body">
+          <div class="cert-name">Python and Artificial Intelligence</div>
+          <div class="cert-issuer">DevTown · Verified</div>
+        </div>
+        <span class="cert-arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <a href="https://moonshot.scaler.com/s/sl/zWcrxV-fkL" target="_blank" rel="noopener noreferrer" class="cert-card reveal">
+        <span class="cert-icon" aria-hidden="true">⚡</span>
+        <div class="cert-body">
+          <div class="cert-name">DSA in C++</div>
+          <div class="cert-issuer">Scaler · Moonshot Verified</div>
+        </div>
+        <span class="cert-arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <a href="https://drive.google.com/file/d/1cSIdUP4Fjr5KI1l276rPFDzMxWu0zBis/view" target="_blank" rel="noopener noreferrer" class="cert-card reveal">
+        <span class="cert-icon" aria-hidden="true">📡</span>
+        <div class="cert-body">
+          <div class="cert-name">Radar Software Kit</div>
+          <div class="cert-issuer">NXP India · Verified</div>
+        </div>
+        <span class="cert-arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <a href="https://drive.google.com/file/d/11Dk7x6SpXLFd3OJngZayKxme_UOn2zkM/view" target="_blank" rel="noopener noreferrer" class="cert-card reveal">
+        <span class="cert-icon" aria-hidden="true">🔬</span>
+        <div class="cert-body">
+          <div class="cert-name">IEEE WCET</div>
+          <div class="cert-issuer">IEEE · Verified</div>
+        </div>
+        <span class="cert-arrow" aria-hidden="true">↗</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ CONTACT -->
+  <section id="contact" aria-label="Contact">
+    <div class="contact-inner reveal">
+      <h2 class="contact-headline">Let's Build<br />Something</h2>
+      <p class="contact-sub">
+        Open to internships, research collaborations, and project discussions across
+        embedded systems, AI, railway tech, and data analytics.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:sinha.adityaa03@gmail.com" class="contact-link">
+          <span aria-hidden="true">✉</span> Email
+        </a>
+        <a href="http://www.linkedin.com/in/aditya-sinha-7aa932268" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <span aria-hidden="true">in</span> LinkedIn
+        </a>
+        <a href="tel:+918829874103" class="contact-link">
+          <span aria-hidden="true">☎</span> Call
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ FOOTER -->
+  <footer>
+    <span>ADITYA SINHA · JIIT NOIDA · ECE</span>
+    <span class="footer-sig">sinha.adityaa03@gmail.com</span>
+    <span>Ghaziabad, UP, India</span>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════ SCRIPTS -->
+  <script src="js/circuit.js"></script>
+  <script src="js/radar.js"></script>
+  <script src="js/animations.js"></script>
+
+</body>
+</html>
